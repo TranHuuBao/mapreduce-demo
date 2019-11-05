@@ -40,8 +40,6 @@ public class Demo {
         job.setReducerClass(Reduce.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-//        job.setInputFormatClass((Text.class,Text.class));
-//        job.setOutputFormatClass(TextOutputFormat.class);
         Path outputPath = new Path(args[1]);
         //Configuring the input/output path from the filesystem into the job
         FileInputFormat.addInputPath(job, new Path(args[0]));
