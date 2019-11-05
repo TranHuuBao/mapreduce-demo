@@ -4,10 +4,10 @@ Install JAVA 8 if you haven't:
 Checking version by command:
 > java -version
 ### Windows: 
-	- Download JDK 8 : 
+- Download JDK 8 : 
 	We will download [jdk-8u231-windows-x64.exe](https://download.oracle.com/otn/java/jdk/8u231-b11/5b13a193868b4bf28bcb45c792fce896/jdk-8u231-windows-x64.exe)
 	you need to sign in oracle account. If you don't have, please create a new account and download it.
-	-  Install JDK:
+-  Install JDK:
 	Open Download folder: run file jdk-8u231-windows-x64.exe
 	Choose folder for install JDK and JRE ( please remember it for next step ) 	
 - Add JAVA_HOME system variable
@@ -18,7 +18,7 @@ Checking version by command:
 	- In system variables, find `PATH`, clicks on the `Edit...` button. In “Edit environment variable” dialog, clicks on the `New` button and add this `%JAVA_HOME%\bin
 - Verification
 	``` java -version ```
- [Reference](https://o7planning.org/vi/10377/huong-dan-cai-dat-va-cau-hinh-java)
+-  [Reference](https://o7planning.org/vi/10377/huong-dan-cai-dat-va-cau-hinh-java)
 	
 ### Mac OS: following command
 	> brew cask install java
@@ -40,7 +40,7 @@ Checking version by command:
 - Check java version
 	```java -version ```
 	
-	- Expect: 
+	- Expect: java version 1.8.0_xxx
 	``` 
 	java version "1.8.0_201"		
 	Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
