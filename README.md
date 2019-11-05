@@ -2,8 +2,9 @@
 ## Objectives of this tutorial
 - Understand about how to excutable of hadoop map-reduce.
 - Know about advantage and disadvantage of map-reduce.
+
 ## Problem
-- Count number post per year by type post
+- Count number post per year by post type
 - Input:
 
 | id |date_time  |post_id|type_post|is_badge|user_id|
@@ -11,25 +12,6 @@
 | 3 | 2008-09-15T08:55:03.923 |82946|Teacher|false|3718
 |3|2008-09-15T08:55:03.957|82947|Teacher|false|994 
 
-
-
-## Setup enviroment 
-- Java: Install JAVA 8 if you haven't
-	- Windows: you can install follow this [link](https://java.com/en/download/help/windows_manual_download.xml)
-	- Mac OS: you can instal follow this [link](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html)
-	- Ubuntu: follow command
-	
-	> sudo add-apt-repository ppa:webupd8team/java
-	
-	> sudo apt update; sudo apt install oracle-java8-installer
-	
-	> javac -version
-	
-	> sudo apt install oracle-java8-set-default
-	
-- Maven: You can install maven follow instruction in [link](https://www.baeldung.com/install-maven-on-windows-linux-mac) for all OS
-- Intellij IDE: You can install it follow instruction in [link](https://www.jetbrains.com/help/idea/installation-guide.html) for all OS.
-You can use Eclipse but it is not recommend.
 
 ## Pull source code mapreduce
 We was develop a simple project mapreduce for demo. You need to clone it and build for your exercise.
