@@ -19,19 +19,19 @@ Follow instruction https://github.com/TranHuuBao/mapreduce-demo/blob/master/env.
 ## Pull source code mapreduce
 - We was develop a simple project mapreduce for demo. You need to clone it and build for your exercise.
 ``` git clone https://github.com/TranHuuBao/mapreduce-demo.git ```
-> ```pom.xml ```: It contains dependencies for this project
+> pom.xml: It contains dependencies for this project
 
-> ``` Demo.java```:  Source code mapreduce 
+> Demo.java:  Source code mapreduce 
 
-	- ```Map class```: operate map phase
+	- Map class: operate map phase
 
-	- ```Reduce class```: operate reduce phase
+	- Reduce class: operate reduce phase
 
 ## Export excutable jar file
 ### Open project course with Intellij IDE 
 On toolbar click ```File -> Open -> path-to-project```
 
-> Wait some minutes for mvn pull external libraries 
+**Wait some minutes for mvn pull external libraries**
 
 ### Export jar file 
 - Open terminal and run below command 
@@ -63,6 +63,7 @@ $path/data-badges.csv $path-output
 - Check input data:
 ``` > hdfs dfs -cat /data/input/data-badges.csv ```
 - Submit job by command in server
+- Example:
 ```> hadoop jar $path-to-project/target/course-1.0-SNAPSHOT.jar demo.Demo /data/input/data-badges.csv /data/output/ ```
 
 	- *hadoop jar* will execute jar file course-1.0-SNAPSHOT.jar 
