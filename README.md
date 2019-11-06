@@ -79,3 +79,9 @@ On toolbar click ```File -> Open -> path-to-project```
 - When you running a application on hadoop but you want to stop it. You can use command:
 	 ``` > mapred job -kill $application-id ```
 # Exercise 
+
+## Exercise 1
+
+## Exercise 2
+
+

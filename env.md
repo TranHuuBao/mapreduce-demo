@@ -1,4 +1,5 @@
-# Setup enviroment for this course
+# Setup enviroment for this course map-reduce 
+This is instruction for setup enviroment for mapreduce tutorial
 ## JAVA 8
 Install JAVA 8 if you haven't: 
 Checking version by command:
@@ -75,6 +76,19 @@ If you got a 404 error, try doing a `brew update` just before
 ```bash
 sudo apt install maven
 ```
+- If you have any problem please install follow [link](https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/) to fix it
+- If you have problem with proxy: please add it for maven to file $MAVEN_HOME/conf/setting.xml
+```xml
+  <proxies>
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.host</host>
+      <port>80</port>
+    </proxy>
+  </proxies>
+```
 - Verification
 	``` mvn -version ``` 
 ## Install Intellij IDE
@@ -94,8 +108,10 @@ We will develop in IntelliJ IDE but if you want can use Eclipse (not recommend).
 - Type IDEA Community and install 
 
 ### Install Maven Plugin 
-Press double Shift for open Plugin 
-Install Maven plugin and Maven Helper in Plugins 
+- Open IntelliJ and click button Configure at left bottom.
+- Click Plugin and type maven in search bar 
+- Install *Maven Integration* 
+- Restart IDE
 
 ## Create Example project
 - Open IntelliJ IDE
@@ -116,4 +132,18 @@ public static void main(String[] args) {
 Hello World!
 ```
 
- 
+- edit pom.xml and insert :
+```xml
+<dependencies>
+	 <dependency> <groupId>org.apache.hadoop</groupId>
+		 <artifactId>hadoop-core</artifactId>
+		 <version>1.2.1</version>
+	 </dependency>
+ </dependencies>
+```
+- Open terminal and run command:
+``` cd $path-to-project && mvn install ```
+- If it is not work please check your proxy. Please add it for mvn
+- If it work ok. Congratulations!!
+You set up successful enviroment for map-reduce course!
+
