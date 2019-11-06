@@ -13,8 +13,8 @@
 | 3 | 2008-09-15T08:55:03.923 |82946|Teacher|false|3718
 |3|2008-09-15T08:55:03.957|82947|Teacher|false|994 
 
-## Set up enviroment
-Follow instruction https://github.com/TranHuuBao/mapreduce-demo/blob/master/env.md
+## Set up enviroment if you have not yet
+Follow instruction https://github.com/TranHuuBao/mapreduce-demo/blob/master/setup-env.md
 
 ## Pull source code mapreduce
 - We was develop a simple project mapreduce for demo. You need to clone it and build for your exercise.
