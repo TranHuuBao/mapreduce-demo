@@ -1,9 +1,10 @@
-# Setup enviroment for this course map-reduce 
-This is instruction for setup enviroment for mapreduce tutorial
+
+# Setup enviroment for map-reduce course
+This is instruction for setup enviroment and development tools for mapreduce tutorial
 ## JAVA 8
 Install JAVA 8 if you haven't: 
 Checking version by command:
-> java -version
+```java -version```
 ### Windows: 
 - Download JDK 8 : 
 	We will download [jdk-8u231-windows-x64.exe](https://download.oracle.com/otn/java/jdk/8u231-b11/5b13a193868b4bf28bcb45c792fce896/jdk-8u231-windows-x64.exe)
@@ -77,18 +78,6 @@ If you got a 404 error, try doing a `brew update` just before
 sudo apt install maven
 ```
 - If you have any problem please install follow [link](https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/) to fix it
-- If you have problem with proxy: please add it for maven to file $MAVEN_HOME/conf/setting.xml
-```xml
-  <proxies>
-    <proxy>
-      <id>optional</id>
-      <active>true</active>
-      <protocol>http</protocol>
-      <host>proxy.host</host>
-      <port>80</port>
-    </proxy>
-  </proxies>
-```
 - Verification
 	``` mvn -version ``` 
 ## Install Intellij IDE
@@ -144,6 +133,18 @@ Hello World!
 - Open terminal and run command:
 ``` cd $path-to-project && mvn install ```
 - If it is not work please check your proxy. Please add it for mvn
+	- Please add it for maven to file $MAVEN_HOME/conf/setting.xml
+```xml
+  <proxies>
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>proxy.host</host>
+      <port>80</port>
+    </proxy>
+  </proxies>
+```
 - If it work ok. Congratulations!!
 You set up successful enviroment for map-reduce course!
 
