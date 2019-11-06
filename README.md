@@ -89,8 +89,3 @@ $path/data-badges.csv $path-output
 	 ``` > mapred job -kill $application-id ```
 # Exercise 
 
-## Exercise 1 
-
-## Exercise 2
-
-
