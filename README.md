@@ -48,13 +48,14 @@ On toolbar click ```File -> Open -> path-to-project```
 - In windows you can follow [link](https://success.tanaza.com/s/article/How-to-use-SCP-command-on-Windows)
 ## Run application
 ### Run on local
-- Click edit configure in top left for add argument
-- Add configure:
+- Click add configure in top right
+- Click + button in top left and select Application
+- Add configure in program arguments:
 ```
 $path/data-badges.csv $path-output
 ```
 - Ctrl + Shirft + F10
-- After application done check output in $path-output
+- After application done check output in $path-output/part-r-00000
 
 ### Run on server
 - connect to server
@@ -77,7 +78,7 @@ $path/data-badges.csv $path-output
 	> hadoop fs -cat /data/output/* 
 	> hdfs dfs -cat /data/output/*
 	 ```
-- Expect result:
+- Expect result example:
 ```
 	Autobiographer	2008	6273
 	Autobiographer	2009	12701
