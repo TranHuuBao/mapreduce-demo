@@ -48,6 +48,13 @@ On toolbar click ```File -> Open -> path-to-project```
 - In windows you can follow [link](https://success.tanaza.com/s/article/How-to-use-SCP-command-on-Windows)
 ## Run application
 ### Run on local
+- Click edit configure in top left for add argument
+- Add configure:
+```
+$path/data-badges.csv $path-output
+```
+- Ctrl + Shirft + F10
+- After application done check output in $path-output
 
 ### Run on server
 - connect to server
@@ -80,7 +87,7 @@ On toolbar click ```File -> Open -> path-to-project```
 	 ``` > mapred job -kill $application-id ```
 # Exercise 
 
-## Exercise 1
+## Exercise 1 
 
 ## Exercise 2
 
