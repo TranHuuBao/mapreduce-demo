@@ -8,8 +8,6 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
-import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.fs.Path;
@@ -17,8 +15,11 @@ import org.apache.hadoop.fs.Path;
 public class Demo {
     public static class Map extends Mapper<LongWritable,Text,Text,IntWritable> {
         public void map(LongWritable key, Text value, Context context) throws IOException,InterruptedException{
+            // value is a line in input file
             String[] arr = value.toString().split(",");
             context.write(new Text(arr[3]+ "\t" + arr[1].substring(0,4)), new IntWritable(1));
+            // key: post_type   year
+            // value: 1
         }
     }
     public static class Reduce extends Reducer<Text,IntWritable,Text,IntWritable> {
@@ -29,16 +30,23 @@ public class Demo {
                 sum+=x.get();
             }
             context.write(key, new IntWritable(sum));
+            // output key  count
         }
     }
     public static void main(String[] args) throws Exception {
+        // create configure for job
         Configuration conf= new Configuration();
-        Job job = new Job(conf,"Statistic Post Each Year");
+        Job job = new Job(conf,"Count Post Each Year");
         job.setJarByClass(Demo.class);
+        // set class for map phase
         job.setMapperClass(Map.class);
+        // set class for suffle phase
         job.setCombinerClass(Reduce.class);
+        // set class for reduce phase
         job.setReducerClass(Reduce.class);
+        // type key of output: post_type + '\t' + year
         job.setOutputKeyClass(Text.class);
+        // type value of output: sum
         job.setOutputValueClass(IntWritable.class);
         Path outputPath = new Path(args[1]);
         //Configuring the input/output path from the filesystem into the job
