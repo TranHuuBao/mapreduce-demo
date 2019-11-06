@@ -1,6 +1,9 @@
 
 # Setup enviroment for map-reduce course
 This is instruction for setup enviroment and development tools for mapreduce tutorial
+- JAVA 8
+- Maven
+- IntelliJ IDE
 ## JAVA 8
 Install JAVA 8 if you haven't: 
 Checking version by command:
