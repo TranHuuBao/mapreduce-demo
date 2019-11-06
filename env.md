@@ -9,7 +9,7 @@ Checking version by command:
 	you need to sign in oracle account. If you don't have, please create a new account and download it.
 -  Install JDK:
 	Open Download folder: run file jdk-8u231-windows-x64.exe
-	Choose folder for install JDK and JRE ( please remember it for next step ) 	
+	Choose folder for install JDK and JRE ( please remember it for next step )
 - Add JAVA_HOME system variable
 	- Press Windows key, type `adva` and clicks on the `View advanced system settings`
 	- In System Properties dialog, select `Advanced` tab and clicks on the `Environment Variables...` button.
@@ -23,7 +23,7 @@ Checking version by command:
 ### Mac OS: following command
 	> brew cask install java
 
-	> brew tap caskroom/versions  
+	> brew tap caskroom/versions
 
 	> brew cask install java8
 
@@ -42,7 +42,7 @@ Checking version by command:
 	
 	- Expect: java version 1.8.0_xxx
 	``` 
-	java version "1.8.0_201"		
+	java version "1.8.0_201"
 	Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
 	Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode) 
 	```
@@ -96,3 +96,24 @@ We will develop in IntelliJ IDE but if you want can use Eclipse (not recommend).
 ### Install Maven Plugin 
 Press double Shift for open Plugin 
 Install Maven plugin and Maven Helper in Plugins 
+
+## Create Example project
+- Open IntelliJ IDE
+- Click: File -> New -> Project -> Maven 
+- Type GroupId and ArtifactId 
+- Type Project name (if you want to change)
+- Create a package in src.main.java: in this article, we are using *demo*
+- Create new java class in src.main.java.demo: we are using *HelloWorld*
+- Insert code to class HellloWorld
+```
+public static void main(String[] args) {
+	System.out.println("Hello World!");
+}
+```
+- Press Ctrl + Shirft + F10 for running class
+- Output: 
+```
+Hello World!
+```
+
+ 
