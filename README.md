@@ -87,5 +87,4 @@ $path/data-badges.csv $path-output
 ## Kill application
 - When you running a application on hadoop but you want to stop it. You can use command:
 	 ``` > mapred job -kill $application-id ```
-# Exercise 
 
