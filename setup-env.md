@@ -163,6 +163,20 @@ Hello World!
     </proxy>
   </proxies>
 ```
+## Copy package to your computer
+
+    ``` 
+    scp  member1@118.68.170.134:/opt/logstash-7.4.2.tar.gz ~/Downloads/
+	enter password: w8dqWmes6yne
+    /opt/logstash-7.4.2.tar.gz
+    /opt/apache-zookeeper-3.5.5.tar.gz
+    /opt/hadoop-3.1.1.tar.gz
+    /opt/kafka_2.12-2.3.0.tgz
+    /opt/apache-maven-3.6.2-bin.tar.gz
+    ```
+
+
+
 - If it work ok. Congratulations!!
 You set up successful enviroment for map-reduce course!
 
