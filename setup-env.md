@@ -35,9 +35,10 @@ Checking version by command:
 ###  Ubuntu: following command
 	
 - Step 01: Make folder for installation:
-	> mkdir /opt/java
-
-	> cd /opt/java
+	```
+	mkdir /opt/java
+	cd /opt/java 
+	```
 
 - Step 02: Download jdk binary 
 
