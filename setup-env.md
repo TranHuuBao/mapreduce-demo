@@ -34,13 +34,36 @@ Checking version by command:
 
 ###  Ubuntu: following command
 	
-	> sudo add-apt-repository ppa:webupd8team/java
+- Step 01: Make folder for installation:
+	> mkdir /opt/java
+
+	> cd /opt/java
+
+- Step 02: Download jdk binary 
+
+	``` 
+	scp  member1@118.68.170.134:/opt/jdk-8u231-linux-x64.tar.gz ~/Downloads/
+	enter password: w8dqWmes6yne
+	mv ~/Downloads/jdk-8u231-linux-x64.tar.gz .
+	```
+- Step 03: Uncompress the binary 
+	``` tar -vzxf jdk-8u231-linux-x64.tar.gz ```
+
+- Step 04: Add JAVA_HOME to the end of /etc/profile (system wise)
+	``` 
+	export JAVA_HOME=/opt/java/jdk1.8.0_231
+	export PATH=$PATH:$JAVA_HOME/bin
+	```
 	
-	> sudo apt update; sudo apt install oracle-java8-installer
+- Check java version
+	```java -version ```
 	
-	> javac -version
-	
-	> sudo apt install oracle-java8-set-default
+	- Expect: java version 1.8.0_xxx
+	``` 
+	java version "1.8.0_231"
+	Java(TM) SE Runtime Environment (build 1.8.0_231-b11)
+	Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)
+	```
 	
 - Check java version
 	```java -version ```
