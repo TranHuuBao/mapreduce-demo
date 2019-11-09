@@ -56,7 +56,7 @@ Checking version by command:
 	export PATH=$PATH:$JAVA_HOME/bin
 	```
 	
-- Check java version
+### Check java version
 	```java -version ```
 	
 	- Expect: java version 1.8.0_xxx
