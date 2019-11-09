@@ -66,15 +66,6 @@ Checking version by command:
 	Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)
 	```
 	
-- Check java version
-	```java -version ```
-	
-	- Expect: java version 1.8.0_xxx
-	``` 
-	java version "1.8.0_201"
-	Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
-	Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode) 
-	```
 ## Install Maven (mvn)
 - In this course you need to use maven for pull dependencies
 - To verify the Maven installation, in terminal, issue the command `mvn -version`
